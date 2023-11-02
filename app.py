@@ -15,7 +15,7 @@ ticket_medio = ticket_medio.rename(columns={0: 'Ticket Médio'})
 # Enviar e-mail com o relatório gerado
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
-mail.To = '' # Informar qualquer email para receber
+mail.To = 'example@mail.com' # Informar qualquer email para receber
 mail.Subject = 'Faturamento das Lojas'
 mail.HTMLBody = f'''
 <p>Prezados,</p>
